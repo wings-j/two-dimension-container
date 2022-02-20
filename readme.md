@@ -41,6 +41,12 @@ container.$content.appendChild(div)
 
 - 类型：HTMLElement
 
+### `state`
+
+状态
+
+- 类型：`{x: number, y: number, s: number}`
+
 ## 成员方法
 
 ### `translateTo(ax: number, ay: number): void`
