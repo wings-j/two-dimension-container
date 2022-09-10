@@ -2,7 +2,7 @@
 
 # 示例
 
-[Demo](http://wings-j.gitee.io/two-dimension-container)
+[Demo](https://wings-j.github.io/two-dimension-container/)
 
 # 使用方法
 
@@ -26,6 +26,20 @@ container.$content.appendChild(div)
 ```
 
 # API
+
+## 构造方法
+
+`constructor(width?: string, height?: string, config?: Partial<Config>)`
+
+- width：宽度
+- height：高度
+- config：配置
+  - translate 可移动
+  - scale 可缩放
+  - translateSpeed 平移速度
+  - scaleSpeed 缩放速度
+  - animate 动画
+  - animateDuration 动画周期
 
 ## 成员变量
 

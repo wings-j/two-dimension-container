@@ -1,8 +1,4 @@
 /**
- * 二维容器
- */
-
-/**
  * 矩阵
  */
 class Matrix {
@@ -105,7 +101,6 @@ class TwoDimensionContainer {
    * @param scale 可缩放
    * @param translateSpeed 平移速度
    * @param scaleSpeed 缩放速度
-   * @param scale 可缩放
    * @param animate 动画
    * @param animateDuration 动画周期
    */
