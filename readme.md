@@ -1,18 +1,20 @@
-二维容器，在固定空间内的拖拽和缩放。
+# twe-dimension-container
 
-# 示例
+2D container. Drag and scale in a fixed space.
 
-[Demo](https://wings-j.github.io/two-dimension-container/)
+## Demo
 
-# 使用方法
+[https://wings-j.github.io/two-dimension-container](https://wings-j.github.io/two-dimension-container/)
 
-安装：
+## Usage
+
+Install：
 
 ```sh
 npm install --save-dev @wings-j/two-dimensional-container
 ```
 
-示例：
+Example：
 
 ```js
 import TwoDimensionContainer from '@wings-j/two-dimensional-container'
@@ -27,69 +29,64 @@ container.$content.appendChild(div)
 
 # API
 
-## 构造方法
+## Constructor
 
 `constructor(width?: string, height?: string, config?: Partial<Config>)`
 
-- width：宽度
-- height：高度
-- config：配置
-  - translate 可移动
-  - scale 可缩放
-  - translateSpeed 平移速度
-  - scaleSpeed 缩放速度
-  - animate 动画
-  - animateDuration 动画周期
+- width: width of the container
+- height: height of the container
+- config：
+  - translate: draggable
+  - scale: scalable
+  - translateSpeed: speed of translating
+  - scaleSpeed: speed of scaling
+  - animate: zoom with animations
+  - animateDuration: animation duration
 
-## 成员变量
+## Members
 
-### `$container`
+### `$container: HTMLElement`
 
-容器
+Container element.
 
-- 类型：HTMLElement
+### `$content: HTMLElement`
 
-### `$content`
+Content element.
 
-内容
+### `state: {x: number, y: number, s: number}`
 
-- 类型：HTMLElement
-
-### `state`
-
-状态
-
-- 类型：`{x: number, y: number, s: number}`
-
-## 成员方法
+Current position and scale factor
 
 ### `translateTo(ax: number, ay: number): void`
 
-绝对平移
+Absolute translate.
 
-- 参数
-  - ax：横坐标绝对量
-  - ay：纵坐标绝对量
+Parameters:
+
+- ax：absolute value of x
+- ay：absolute value of y
 
 ### `translateBy(dx: number, dy: number): void`
 
-相对平移
+Relative translate.
 
-- 参数
+Parameters:
 
-  - dx：横坐标相对量
-  - dy：纵坐标相对量
+- ax：relative value of x
+- ay：relative value of y
 
 ### `scaleTo(as: number): void`
 
-绝对缩放
+Absolute scale.
 
-- 参数
-  - ax：系数绝对量
+Parameters:
+
+- ax：absolute factor
 
 ### `scaleBy(as: number): void`
 
-相对缩放
+Relative scale
 
-- 参数
-  - ax：系数相对量
+Parameters:
+
+- ax：relative factor
